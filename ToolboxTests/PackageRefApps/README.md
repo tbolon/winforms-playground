@@ -54,8 +54,14 @@ Here are the results observed:
 | Control custom icon?    |                            |           ❌          |          ✅         |            ✅            |            ❌            |
 
 
-Here are the conclusions :
+Here are the conclusions:
 
-- The legacy packages.config format is not supported at all
+- The legacy packages.config format is not supported at all and should be avoided
 - The visual studio integrated designer does use a lot of metadata from the package and the control, but ignore any custom icon.
 - The out-of-proc designer is the opposite: it only supports custom icon and ignore everything else.
+
+
+Suggested fixes:
+
+- Visual Studio should support custom icons in the legacy designer, as it already inspect custom attributes set on the control.
+- Out-of-proc designer should support enhanced descriptions on the control library and the control it-self.
