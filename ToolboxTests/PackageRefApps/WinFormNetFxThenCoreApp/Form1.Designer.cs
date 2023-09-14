@@ -1,0 +1,91 @@
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace WinFormNetCoreThenFxApp
+{
+    partial class Form1
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.myControl1 = new MyControlLibrary.MyControl();
+            this.myControl2 = new MyControlLibrary2.MyControl2();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // myControl1
+            // 
+            this.myControl1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.myControl1.Location = new System.Drawing.Point(0, 0);
+            this.myControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.myControl1.Name = "myControl1";
+            this.myControl1.Size = new System.Drawing.Size(892, 123);
+            this.myControl1.TabIndex = 0;
+            this.myControl1.Text = "myControl1";
+            // 
+            // myControl2
+            // 
+            this.myControl2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.myControl2.Location = new System.Drawing.Point(0, 244);
+            this.myControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.myControl2.Name = "myControl2";
+            this.myControl2.Size = new System.Drawing.Size(892, 124);
+            this.myControl2.TabIndex = 1;
+            this.myControl2.Text = "myControl2";
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Location = new System.Drawing.Point(0, 123);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(892, 121);
+            this.label1.TabIndex = 3;
+            this.label1.Text = resources.GetString("label1.Text");
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(892, 368);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.myControl2);
+            this.Controls.Add(this.myControl1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private MyControlLibrary.MyControl myControl1;
+        private MyControlLibrary2.MyControl2 myControl2;
+        private Label label1;
+    }
+}

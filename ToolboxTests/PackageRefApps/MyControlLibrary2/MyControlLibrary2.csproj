@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net48;net7.0-windows</TargetFrameworks>
+        <UseWindowsForms>true</UseWindowsForms>
+
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageVersion>$([System.DateTime]::Now.ToString("yy.MMdd.HHmm"))</PackageVersion>
+        <Version>$(PackageVersion)</Version>
+        <Title>My Control Lib2</Title>
+        <Description>My Control Library Description</Description>
+        <ProductName>My Control Lib</ProductName>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+        <PackageOutputPath>..\local-packages</PackageOutputPath>
+        <Authors>Lib Authors</Authors>
+        <Company>Lib Company</Company>
+        <Product>My Control Library 2</Product>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Remove="MyControl2.bmp" />
+        <EmbeddedResource Include="MyControl2.bmp" />
+    </ItemGroup>
+
+</Project>

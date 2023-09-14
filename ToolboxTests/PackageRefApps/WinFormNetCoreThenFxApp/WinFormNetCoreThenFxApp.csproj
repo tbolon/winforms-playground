@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFrameworks>net7.0-windows;net48</TargetFrameworks>
+        <UseWindowsForms>true</UseWindowsForms>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MyControlLibrary" Version="23.914.1521" />
+      <PackageReference Include="MyControlLibrary2" Version="23.914.1521" />
+    </ItemGroup>
+
+</Project>
