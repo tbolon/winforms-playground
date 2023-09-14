@@ -47,7 +47,7 @@ Here are the results observed:
 | Target Frameworks       |            net48           |         net48        |   net7.0-windows   |   net7.0-windows;net48  |   net48;net7.0-windows  |
 | Designer Used           |        Visual Studio       |     Visual Studio    |     Out-of-Proc    |       Out-of-Proc       |      Visual Studio      |
 | csproj SDK              |        Legacy csproj       |     Legacy csproj    |       New SDK      |         New SDK         |         New SDK         |
-| Package reference style |       packages.config      |  <PackageReference>  | <PackageReference> |    <PackageReference>   |    <PackageReference>   |
+| Package reference style |       packages.config      |  &lt;PackageReference&gt;  | &lt;PackageReference&gt; |    &lt;PackageReference&gt;   |    &lt;PackageReference&gt;   |
 | Toolbox populated?      |              ❌             |           ✅          |          ✅         |            ✅            |            ✅            |
 | Uses assmebly Product?  |                            |           ✅          |          ❌         |            ❌            |            ✅            |
 | Enhanced tooltip?       |                            |           ✅          |          ❌         |            ❌            |            ✅            |
