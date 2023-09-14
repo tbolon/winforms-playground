@@ -22,7 +22,7 @@ The goal is to observe how visual studio handles the nuget package references an
 
 There are multiple features tracked:
 
-- How does visual studio show the library (package) containing the controls in the Toolbox?  
+- How does visual studio show the library (package) product containing the controls in the Toolbox?  
   It's supposed to use the `assembly: AssemblyProduct` attribute [as stated in a github comment](https://github.com/NuGet/Home/issues/6440#issuecomment-434827530).
 - What visual studio displays in the tooltip of the control in the Toolbox?
   It's supposed to use the `DescriptionAttribute` of the control [as stated in the same github comment](https://github.com/NuGet/Home/issues/6440#issuecomment-434827530).
@@ -42,17 +42,16 @@ To check the visual studio behavior:
 
 Here are the results observed:
 
-|                         | WindowsFormsNetFxConfigApp | WindowsFormsNetFxApp |  WinFormNetCoreApp | WinFormNetCoreThenFxApp | WinFormNetFxThenCoreApp |
-|-------------------------|:--------------------------:|:--------------------:|:------------------:|:-----------------------:|:-----------------------:|
-| Target Frameworks       |            net48           |         net48        |   net7.0-windows   |   net7.0-windows;net48  |   net48;net7.0-windows  |
-| Designer Used           |        Visual Studio       |     Visual Studio    |     Out-of-Proc    |       Out-of-Proc       |      Visual Studio      |
-| csproj SDK              |        Legacy csproj       |     Legacy csproj    |       New SDK      |         New SDK         |         New SDK         |
-| Package reference style |       packages.config      |  &lt;PackageReference&gt;  | &lt;PackageReference&gt; |    &lt;PackageReference&gt;   |    &lt;PackageReference&gt;   |
-| Toolbox populated?      |              ❌             |           ✅          |          ✅         |            ✅            |            ✅            |
-| Uses assmebly Product?  |                            |           ✅          |          ❌         |            ❌            |            ✅            |
-| Enhanced tooltip?       |                            |           ✅          |          ❌         |            ❌            |            ✅            |
-| Control custom icon?    |                            |           ❌          |          ✅         |            ✅            |            ❌            |
-
+|                         | WindowsFormsNetFxConfigApp |  WindowsFormsNetFxApp |   WinFormNetCoreApp   | WinFormNetCoreThenFxApp | WinFormNetFxThenCoreApp |
+|-------------------------|:--------------------------:|:---------------------:|:---------------------:|:-----------------------:|:-----------------------:|
+| Target Frameworks       |            net48           |         net48         |     net7.0-windows    |   net7.0-windows;net48  |   net48;net7.0-windows  |
+| Designer Used           |        Visual Studio       |     Visual Studio     |      Out-of-Proc      |       Out-of-Proc       |      Visual Studio      |
+| csproj SDK              |        Legacy csproj       |     Legacy csproj     |        New SDK        |         New SDK         |         New SDK         |
+| Package reference style |       packages.config      | &lt;PackageReference> | &lt;PackageReference> |  &lt;PackageReference>  |  &lt;PackageReference>  |
+| Toolbox populated?      |              ❌             |           ✅           |           ✅           |            ✅            |            ✅            |
+| Uses assembly Product?  |                            |           ✅           |           ❌           |            ❌            |            ✅            |
+| Enhanced tooltip?       |                            |           ✅           |           ❌           |            ❌            |            ✅            |
+| Control custom icon?    |                            |           ❌           |           ✅           |            ✅            |            ❌            |
 
 Here are the conclusions:
 
