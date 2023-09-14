@@ -1,4 +1,4 @@
-﻿namespace WinFormNetCoreApp
+﻿namespace WinFormNetCoreSingleApp
 {
     partial class Form1
     {
@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             myControl1 = new MyControlLibrary.MyControl();
-            myControl2 = new MyControlLibrary2.MyControl2();
             label1 = new Label();
             SuspendLayout();
             // 
@@ -42,23 +41,14 @@
             myControl1.TabIndex = 0;
             myControl1.Text = "myControl1";
             // 
-            // myControl2
-            // 
-            myControl2.Dock = DockStyle.Bottom;
-            myControl2.Location = new Point(0, 290);
-            myControl2.Name = "myControl2";
-            myControl2.Size = new Size(1060, 179);
-            myControl2.TabIndex = 1;
-            myControl2.Text = "myControl2";
-            // 
             // label1
             // 
             label1.Dock = DockStyle.Fill;
             label1.Location = new Point(0, 161);
             label1.Name = "label1";
-            label1.Size = new Size(1060, 129);
+            label1.Size = new Size(1060, 308);
             label1.TabIndex = 2;
-            label1.Text = "- No controls on the Toolbox or only MyControlLibrary (net7.0)\r\n- Inconsistent behavior of the designer depending on other projects interactions";
+            label1.Text = "Only references .net 7 control library\r\n- Include .NET 7 control library in the toolbox\r\n- Design surface OK";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Form1
@@ -67,7 +57,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1060, 469);
             Controls.Add(label1);
-            Controls.Add(myControl2);
             Controls.Add(myControl1);
             Name = "Form1";
             Text = "Form1";
@@ -77,7 +66,6 @@
         #endregion
 
         private MyControlLibrary.MyControl myControl1;
-        private MyControlLibrary2.MyControl2 myControl2;
         private Label label1;
     }
 }

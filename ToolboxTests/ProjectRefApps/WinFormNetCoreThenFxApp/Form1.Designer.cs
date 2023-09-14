@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
 
-namespace WinFormNetMultiApp
+namespace WinFormNetCoreThenFxApp
 {
     partial class Form1
     {
@@ -41,27 +41,27 @@ namespace WinFormNetMultiApp
             myControl1.Dock = DockStyle.Top;
             myControl1.Location = new Point(0, 0);
             myControl1.Name = "myControl1";
-            myControl1.Size = new Size(991, 154);
+            myControl1.Size = new Size(991, 96);
             myControl1.TabIndex = 0;
             myControl1.Text = "myControl1";
             // 
             // myControl2
             // 
             myControl2.Dock = DockStyle.Bottom;
-            myControl2.Location = new Point(0, 201);
+            myControl2.Location = new Point(0, 253);
             myControl2.Name = "myControl2";
-            myControl2.Size = new Size(991, 155);
+            myControl2.Size = new Size(991, 103);
             myControl2.TabIndex = 1;
             myControl2.Text = "myControl2";
             // 
             // label1
             // 
             label1.Dock = DockStyle.Fill;
-            label1.Location = new Point(0, 154);
+            label1.Location = new Point(0, 96);
             label1.Name = "label1";
-            label1.Size = new Size(991, 47);
+            label1.Size = new Size(991, 157);
             label1.TabIndex = 3;
-            label1.Text = "Only MyControlLibrary on the Toolbox (net7.0)";
+            label1.Text = "- Only MyControlLibrary on the Toolbox (net7.0)\r\n- Both libraries are available on the designer surface";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Form1

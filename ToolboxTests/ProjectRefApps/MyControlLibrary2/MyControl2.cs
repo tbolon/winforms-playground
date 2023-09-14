@@ -1,10 +1,13 @@
-﻿using System.Diagnostics;
+﻿using System.ComponentModel;
+using System.Diagnostics;
 using System.Drawing;
 using System.Windows.Forms;
 
 namespace MyControlLibrary2
 {
     [ToolboxBitmap(typeof(MyControl2))]
+    [Description("My Control 2")]
+    [DisplayName("MyControl 2")]
     public sealed class MyControl2 : Control
     {
         public MyControl2()

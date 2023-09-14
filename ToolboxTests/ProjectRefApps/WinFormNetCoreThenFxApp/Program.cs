@@ -1,7 +1,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace WinFormNetMultiApp
+namespace WinFormNetCoreThenFxApp
 {
     internal static class Program
     {

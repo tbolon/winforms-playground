@@ -4,14 +4,9 @@
         <TargetFrameworks>net48;net7.0-windows</TargetFrameworks>
         <UseWindowsForms>true</UseWindowsForms>
 
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageVersion>$([System.DateTime]::Now.ToString("yy.MMdd.HHmm"))</PackageVersion>
         <Version>$(PackageVersion)</Version>
-        <Title>My Control Lib2</Title>
-        <Description>My Control Library</Description>
-        <ProductName>My Control Lib</ProductName>
-        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-        <PackageOutputPath>..\..\local-packages</PackageOutputPath>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     </PropertyGroup>
 
     <ItemGroup>

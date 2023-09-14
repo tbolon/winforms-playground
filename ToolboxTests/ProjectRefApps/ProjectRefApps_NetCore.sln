@@ -7,13 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyControlLibrary", "MyContr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormNetCoreApp", "WinFormNetCoreApp\WinFormNetCoreApp.csproj", "{B4D9CB15-887A-4024-B693-7C69696E50B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsNetFxApp", "WindowsFormsNetFxApp\WindowsFormsNetFxApp.csproj", "{3C0BC946-BAC3-405B-92F8-7DC070EC80E6}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyControlLibrary2", "MyControlLibrary2\MyControlLibrary2.csproj", "{58E7BCA0-6967-4B35-9B67-C8ABDFB27707}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsFormsNetFxSdkApp", "WindowsFormsNetFxSdkApp\WindowsFormsNetFxSdkApp.csproj", "{BB040E1A-8320-4678-8400-6FBDF5C9287A}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormNetFxThenCoreApp", "WinFormNetFxThenCoreApp\WinFormNetFxThenCoreApp.csproj", "{93B10B07-06CC-4621-A0FF-0DBD73DCE63C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormNetCoreThenFxApp", "WinFormNetCoreThenFxApp\WinFormNetCoreThenFxApp.csproj", "{4C91BB50-23FE-4F0A-A420-03F8FEB1F829}"
 EndProject
@@ -33,22 +27,10 @@ Global
 		{B4D9CB15-887A-4024-B693-7C69696E50B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4D9CB15-887A-4024-B693-7C69696E50B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4D9CB15-887A-4024-B693-7C69696E50B4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3C0BC946-BAC3-405B-92F8-7DC070EC80E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C0BC946-BAC3-405B-92F8-7DC070EC80E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C0BC946-BAC3-405B-92F8-7DC070EC80E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C0BC946-BAC3-405B-92F8-7DC070EC80E6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{58E7BCA0-6967-4B35-9B67-C8ABDFB27707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{58E7BCA0-6967-4B35-9B67-C8ABDFB27707}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58E7BCA0-6967-4B35-9B67-C8ABDFB27707}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58E7BCA0-6967-4B35-9B67-C8ABDFB27707}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BB040E1A-8320-4678-8400-6FBDF5C9287A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB040E1A-8320-4678-8400-6FBDF5C9287A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB040E1A-8320-4678-8400-6FBDF5C9287A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB040E1A-8320-4678-8400-6FBDF5C9287A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{93B10B07-06CC-4621-A0FF-0DBD73DCE63C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{93B10B07-06CC-4621-A0FF-0DBD73DCE63C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{93B10B07-06CC-4621-A0FF-0DBD73DCE63C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{93B10B07-06CC-4621-A0FF-0DBD73DCE63C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4C91BB50-23FE-4F0A-A420-03F8FEB1F829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4C91BB50-23FE-4F0A-A420-03F8FEB1F829}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C91BB50-23FE-4F0A-A420-03F8FEB1F829}.Release|Any CPU.ActiveCfg = Release|Any CPU

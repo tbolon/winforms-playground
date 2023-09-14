@@ -40,7 +40,7 @@
             this.label1.Size = new System.Drawing.Size(685, 387);
             this.label1.TabIndex = 2;
             this.label1.Text = "- Only MyControlLibrary2 (net48) visible on the Toolbox\r\n- Impossible tu use MyCo" +
-    "ntrolLibrary on the design surface\r\n";
+    "ntrolLibrary on the design surface";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // myControl21

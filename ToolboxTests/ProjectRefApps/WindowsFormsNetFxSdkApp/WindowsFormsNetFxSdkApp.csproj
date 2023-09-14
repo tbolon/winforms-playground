@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net48</TargetFramework>
+        <UseWindowsForms>true</UseWindowsForms>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\MyControlLibrary2\MyControlLibrary2.csproj" />
+        <ProjectReference Include="..\MyControlLibrary\MyControlLibrary.csproj" />
+    </ItemGroup>
+
+</Project>

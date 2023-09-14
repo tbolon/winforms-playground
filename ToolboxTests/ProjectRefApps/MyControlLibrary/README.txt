@@ -1,0 +1,1 @@
+﻿This library multi-targets net7.0-windows and net48 (in this order).
