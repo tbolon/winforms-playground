@@ -4,7 +4,7 @@ This project describe how Visual Studio handles controls libraries referenced th
 
 This has been examined using the latest visual studio preview available: 17.8.0 Preview 1.0
 
-## Setup
+## Goal
 
 We enumerates all limitations and differences between the new out-of-proc designer and the legacy visual studio integrated designer.
 
@@ -34,6 +34,7 @@ There are multiple features tracked:
 
 To check the visual studio behavior:
 
+- **important**: fix the path in `Nuget.config` for it to match your computer path to `local-packages` directory
 - open `PackageRefApps.sln`
 - build the solution
 - Open Form1.cs in each project and observe how the toolbox is populated.
